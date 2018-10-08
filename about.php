@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-//Вводим переменные
+//Вводим переменные +
 $UserName = "Андрей";
 $Age = 47;
 $UserEmail = "at-arb@yandex.ru";
