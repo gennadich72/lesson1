@@ -14,20 +14,20 @@ $UserAbout = 'Заведующий информационно вычислите
 </head>
 <body>
 <!--Вывод переменных-->
-<h1>Информация о пользователе <?php echo($UserName)?></h1>
+<h1>Информация о пользователе <?php echo $UserName?></h1>
 <dl>
     <dt>Имя</dt>
-        <dd><?php echo ($UserName);?></dd>
+        <dd><?php echo $UserName;?></dd>
     <dt>Возраст</dt>
-        <dd><?php echo($Age);?></dd>
+        <dd><?php echo $Age;?></dd>
     <dt>Электронная почта</dt>
         <dd>
-            <a href='mailo:<?php  echo($UserEmail)?>'><?php  echo($UserEmail)?></a>
+            <a href='mailo:<?php  echo($UserEmail)?>'><?php  echo $UserEmail?></a>
         </dd>
     <dt>Город</dt>
-        <dd><?php echo($UserCity)?></dd>
+        <dd><?php echo $UserCity?></dd>
     <dt>Краткий текст о себе</dt>
-        <dd><?php echo($UserAbout)?></dd>
+        <dd><?php echo $UserAbout?></dd>
 </dl>
 </body>
 </html>
