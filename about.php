@@ -1,3 +1,11 @@
+<?php
+//Вводим переменные +
+$UserName = 'Андрей';
+$Age = 47;
+$UserEmail = 'at-arb@yandex.ru';
+$UserCity = 'Ахтубинск';
+$UserAbout = 'Заведующий информационно вычислительного отдела';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +13,6 @@
     <title>Lesson1</title>
 </head>
 <body>
-<?php
-//Вводим переменные +
-$UserName = "Андрей";
-$Age = 47;
-$UserEmail = "at-arb@yandex.ru";
-$UserCity = "Ахтубинск";
-$UserAbout = "Заведующий информационно вычислительного отдела";
-?>
 <!--Вывод переменных-->
 <h1>Информация о пользователе <?php echo($UserName)?></h1>
 <dl>
@@ -22,7 +22,7 @@ $UserAbout = "Заведующий информационно вычислите
         <dd><?php echo($Age);?></dd>
     <dt>Электронная почта</dt>
         <dd>
-            <a href="mailo:<?php  echo($UserEmail)?>"><?php  echo($UserEmail)?></a>
+            <a href='mailo:<?php  echo($UserEmail)?>'><?php  echo($UserEmail)?></a>
         </dd>
     <dt>Город</dt>
         <dd><?php echo($UserCity)?></dd>
