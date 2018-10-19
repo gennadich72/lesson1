@@ -3,12 +3,27 @@
 дополнительное задание к уроку
  */
 //Объявляем переменные
-$UserInt = $_GET['UserInt']; //Значение введенное пользователем
+$UserMessage = '';
+if (isset($_GET['UserInt'])) {
+$UserInt = $_GET['UserInt'];}//Значение введенное пользователем
 $a = 1;
 $b = 1;
 $UserMessage = NULL;
 //$c = NULL;
-begin:
+while ($a < $UserInt)
+    {
+        $c = $a;
+        $a = $a + $b;
+        $b = $c;
+    }
+if ($a > $UserInt)
+    {
+        $UserMessage =  "Число $UserInt НЕ входит в числовой ряд";
+    }elseif ($a == $UserInt)
+    {
+        $UserMessage = "Число $UserInt входит в числовой ряд";
+    }
+/*begin:
 if (isset($UserInt))
 {
     if ($a > $UserInt)
@@ -26,7 +41,7 @@ if (isset($UserInt))
                 $b = $c;
                 goto begin;
                 }
-}
+}*/
 ?>
 
 <!--HTML код -->
